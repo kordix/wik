@@ -1,0 +1,655 @@
+/* Ogólne  */
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family:arial;
+  color:#7f7f7f;
+}
+
+br
+{
+line-height:1px;
+
+}
+
+hr
+{
+border:0px;
+color: #f00;
+background-color: #DEDEDE;
+height: 1px;
+}
+
+a
+{
+color:#6FAC2F;
+-webkit-transition-property: width;
+transition-property: width;
+transition-property: color; -webkit-transition-property: color;
+}
+
+a:hover
+{
+color:#999;
+}
+
+h3
+{
+margin-top:0;
+margin:5;
+padding:0;
+line-height: 1.0em;
+color:#3A5061;
+}
+
+h3.tlo
+{
+clear: both;
+padding: 10px 0 35px 0;
+margin: 10px 0 -10px;
+background: url(http://wiked.pl/templates/wiked/images/heading_sep.png) center bottom no-repeat;
+}
+
+.textbold
+{
+color:#6FAC2F;
+font-weight:bold;
+margin:0;
+padding:0;
+}
+
+.textmale
+{
+font-size:12px;
+color: #696969;
+margin:5px 5px 10px 5px;
+}
+
+.textmalee
+{
+font-size:12px;
+color: #696969;
+line-height:150%;
+text-align: justify;
+}
+
+.textbold:hover:before
+{
+content: '';
+    font-size: 0px;
+    line-height: 0%;
+    width: 0px;
+    border-top: 20px solid #212121;
+    border-left: 20px solid transparent;
+    position: absolute;
+    left: 0px;
+    top: 24px;
+}
+
+
+
+div
+{
+
+}
+
+.clear
+{
+clear:both;
+}
+
+p.linia
+{
+margin:0;
+padding:0;
+}
+
+p.male
+{
+font-size: 13px;
+line-height: 1.5;
+color: #7f7f7f;
+margin-left:10px;
+margin:0px 0px 5px 7px;
+
+}
+
+a.more {
+  font-size: 12px;
+  line-height: 2;
+  margin:10px 10px 10px 7px;
+  padding: 5px 0 5px 23px;
+  background: url(images/more.png) left center no-repeat;
+  text-decoration: none;
+  text-align:justify;
+}
+
+a:link
+{
+text-decoration: none;
+
+}
+
+h3.modul
+{
+font-weight:normal;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* header+menu */
+#header
+{
+
+margin:0;
+width:100%;
+clear:left;
+display:block;
+background: url(images/header_bg.png) center top repeat-x;;
+margin:0;
+height:121px;
+clear:left;
+display:block;
+color:#6FAC2F;
+}
+
+#header-in
+{
+position:relative;
+width: 940px;
+margin: 0 auto;
+height: 120px;
+color:#6FAC2F;
+}
+#menu
+{
+color:#6FAC2F;
+position: absolute;
+border-style: solid; border-color: #888; border-width: 0px;
+right: 0;
+bottom: 12px;
+width: ;
+color:#6FAC2F;
+}
+
+.menu2
+{
+color:#6FAC2F;
+position:relative;
+border-style: solid; border-color: #888; border-width: 0px;
+color:#6FAC2F;
+left:-10px;
+}
+
+#searchbox
+{
+position: absolute;
+    right: 0;
+
+     font-size:13px;
+}
+
+#djmenu
+{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    height: 36px;
+    background: none;
+    position: relative;
+    z-index: 500;
+    font-family: arial, verdana, sans-serif;
+    width: 600px;
+
+}
+
+#przycisk
+{
+padding:0px;
+height:38px;
+float:left;
+position: relative;
+color:#6FAC2F;
+}
+
+#przycisk:hover
+{
+padding:0px;
+height:38px;
+border-style: solid; border-color: #888; border-width: 0px;
+box-shadow: 2px 2px 2px #888888;
+border-radius:5px;
+f
+    background: -webkit-linear-gradient(#92C522, #519613); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(red, yellow); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(red, yellow); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#92C522, #519613); /* Standard syntax */
+}
+
+#menutext
+{
+padding:10;
+position: relative;
+text-decoration:none;
+font-family:arial;
+top: 10px;
+font-size:15px;
+font-weight:bold;
+-moz-transition:0.5s; -webkit-transition:2s;  transition:0.5s;
+color:#6FAC2F;
+}
+
+#menutext:hover
+{
+padding:10;
+position: relative;
+top: 10px;
+font-family:arial;
+font-size:15px;
+font-weight:bold;
+color:#FFF;
+}
+
+
+#logo
+{
+height:80px;
+margin-left:0px;
+margin-top:30px;
+}
+
+#topmenu {
+    position: absolute;
+    margin-right:20px;
+    top: 10px;
+    right: 0;
+    font-size:11px;
+    color: #696969;
+}
+
+
+/*topout-slider*/
+.next:hover
+{
+height:85px;
+
+}
+
+.next:active
+{
+height:95px;
+
+}
+
+
+
+
+
+#topout
+{
+margin:0;
+width:100%;
+background:url(images/slider_bg.jpg);
+border-style: solid; border-color: #fff; border-width: 2px;
+height:279px;
+}
+
+#topout-in
+{
+position:relative;
+width: 940px;
+margin: 0 auto;
+height: 279px;
+}
+
+#sliderobrazdiv
+{
+width:550px;
+height: 279px;
+float:left;
+margin-top:0;
+border-style: solid; border-color: #fff; border-width: 0px;
+float:left;
+}
+
+#textslider
+{
+
+width:375px;
+
+vertical-align: top;
+font-size:20px;
+border-style: solid; border-color: #fff; border-width: 0px;
+margin-top:0;
+float:left;
+}
+
+
+#textslider2
+{
+margin:5;
+padding:0;
+overflow: visible;
+text-align:justify;
+width:400px;
+
+right:0;
+font-weight:bold;
+font-size:16px;
+
+}
+
+.textslide
+{
+font-weight: normal;
+color: #7F7F7F;
+padding: 0;
+overflow: visible;
+text-align: justify;
+margin: 5;
+font-size: 16px;
+}
+
+
+
+
+/*frontout-moduły*/
+#frontout
+{
+margin:0;
+width:100%;
+background: linear-gradient(#f4f7da, white);
+height:297px;
+}
+
+#frontin
+{
+    width: 940px;
+    margin: 0 auto;
+    padding: 0px 0 5px;
+    height:297px;
+    border-style: solid; border-color: #fff; border-width: 0px;
+}
+
+#frontin1
+{
+width:700px;
+height: 297px;
+vertical-align: top;
+font-size:20px;
+border-style: solid; border-color: #000; border-width: 0px;
+margin-top:0;
+float:left;
+}
+
+#frontin2
+{
+border-style: solid; border-color: #000; border-width: 0px;
+margin:0;
+padding:0;
+overflow: visible;
+width:230px;
+right:0;
+font-weight:bold;
+font-size:16px;
+float:left;
+height:297px;
+}
+
+#frontinimg
+{
+padding:5px;
+margin-left:5px;
+}
+
+#frontinimg:hover
+{
+width:210;
+box-shadow: 2px 2px 2px #888888;
+padding:5px;
+margin-left:5px;
+}
+
+#modul
+{
+    float: left;
+    margin: 5px 0 0 0;
+    width: 190px;
+    height:350px;
+    border-style: solid; border-color: #999; border-width: 0px;
+    border-radius:5px;
+    box-shadow: 0px 0px 0px #888888;
+}
+
+#imgborder
+{
+padding: 3px;
+border: 1px solid #e2e2e2;
+margin:5;
+width:160px;
+height:120px;
+}
+
+.mgborder
+{
+padding: 3px;
+border: 1px solid #e2e2e2;
+margin:5;
+}
+
+#imgborder:hover
+{
+width:170px;
+height:130px;
+box-shadow: 2px 2px 2px #888888;
+}
+
+
+/* categories (realizacje+aktualności, tam slider z firmami)*/
+#categories
+{
+margin:0;
+width:100%;
+background:;
+border-style: solid; border-color: #888; border-width: 0px;
+height:384px;
+}
+
+#categories-in
+{
+ width: 1000px;
+    margin: 0 auto;
+    padding: 0px 0 5px;
+    height:384px;
+    border-style: solid; border-color: #fff; border-width: 0px;
+}
+
+#modules
+{
+margin:0;
+width:100%;
+background:;
+height:348px;
+}
+
+#modules-in
+{
+position:relative;
+width: 1000px;
+margin: 0 auto;
+height: 348px;
+border-style: solid; border-color: #000; border-width: 0px;
+
+}
+
+
+
+#module-left
+{
+border-width: 0px;
+border-color: #888;
+border-style: solid;
+margin:0;
+width:630px;
+background:;
+height:348px;
+float:left;
+}
+
+#module-right
+{
+position:relative;
+border-width: 0px; border-color: #888; border-style: solid;
+margin:0;
+padding:0;
+width:310px;
+height:348px;
+float:left;
+}
+
+#module-r1
+{
+border-width: 1px;
+border-color: green;
+border-style: solid;
+margin:0;
+padding:0;
+width:310px;
+background:;
+height:130px;
+float:left;
+}
+
+#module-r2
+{
+border-width: 1px;
+border-color: red;
+border-style: solid;
+margin:0;
+padding:0;
+width:310px;
+background:;
+height:200px;
+float:left;
+}
+
+#realizacje
+{
+position:relative;
+height:250px;
+width:460px;
+
+}
+
+.rimg
+{
+width:150px;
+height:120px;
+margin:5px;
+padding: 3px;
+border: 1px solid #e2e2e2;
+
+}
+
+.rpodpis
+{
+text-align:center;
+font-size:13px;
+color: #6FAC2F;
+
+
+}
+
+/*footer*/
+#footer
+{
+border-width: 0px;
+border-color: green;
+border-style: solid;
+width:100%;
+margin:0;
+background: url(http://wiked.pl/templates/wiked/images/footer_bg.png) 0 0 repeat-x;
+height:72px;
+float:left;
+}
+
+#footer-in
+{
+position:relative;
+width: 940px;
+margin: 0 auto;
+
+}
+
+.imgfoot1
+{
+
+right:500px;
+width:120px;
+float:right;
+margin:10px 5px 5px 5px;
+}
+
+.imgfoot
+{
+
+right:0px;
+width:80px;
+float:right;
+margin:5px;
+}
+
+
+/*main główne miejsce na artykuły*/
+#main-out{
+background: url(images/main_bg.png) 0 0 repeat-x;
+
+}
+
+#main-in
+{
+width: 940px;
+margin: 0 auto;
+padding:0 0 30px 20px;
+background: url(http://wiked.pl/templates/wiked/images/heading_sep.png) center bottom no-repeat;
+}
+
+.breadcrumbs
+{
+display: block;
+margin: 0 0 10px 0;
+padding: 15px 0 12px;
+font-size: 11px;
+line-height: 13px;
+border-bottom: 1px solid #dedede;
+}
+
+
+/*realizacje na podstronach*/
+#bottom-modules
+{
+margin:0;
+width:100%;
+background:;
+height:348px;
+}
+
+#bottom-modules-in
+{
+position:relative;
+width: 1000px;
+margin: 0 auto;
+height: 348px;
+border-style: solid; border-color: #000; border-width: 0px;
+
+}
+/*do wiked.pl/drzwi*/
+.imgtabela
+{
+width:150px;
+float:left;
+margin: 0px 5px 0px 5px;
+
+}

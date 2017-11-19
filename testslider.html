@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+<meta charset="utf-8">
+<link rel="Stylesheet" type="text/css" href="style.css" />
+<link rel="Stylesheet" type="text/css" href="slider.css" />
+<script src="./Slider w CSS3_files/jquery.min.js"></script>  		
+
+<script>
+$(function() {
+
+     var pauseTime = 5000;
+
+     $('#slider .pagination li').click(function (e) {
+          e.preventDefault();
+          //po kliknięciu czyścimy timer
+          clearTimeout(timer);
+
+          var $this = $(this);
+          var $li = $this.parent().find('li');
+          var index = $li.index($this);
+
+          $('#slider .slide').removeClass('active').eq(index).addClass('active');
+
+          $li.removeClass('active');
+          $this.addClass('active');
+
+          //włączamy timer do kolejnego kliknięcia
+          timer = setTimeout(function() {
+               var index = $li.index($li.parent().find('.active'));
+               var clickLi = (index>=$li.length-1)? 0 : ++index;
+
+               $('#slider .pagination li').eq(clickLi).click();
+          }, pauseTime);
+     });
+
+     //po wejściu na stronę odpalamy pierwszy timer, który kliknie na drugi element paginacji
+     var timer = setTimeout(function() {
+          $('#main-slider .pagination li').eq(1).click();
+     }, pauseTime);
+
+});
+</script>
+
+</head>
+
+  
+  
+  
+  <body>
+  
+  <h2 class="dupa">fsafsdfsd</h2> <br>
+  
+   <section class="slider" id="slider">
+
+     <h2 class="visualhidden">Slider</h2>
+     
+     
+     <article class="slide">
+      <div id="topout-in">
+      <div id="sliderobrazdiv">
+      <img width="550px" src="slajd2.png" style="position:absolute">
+      </div>
+      <div id="textslider"><br><h3>Drzwi Stalowe</h3><p id="textslider2" style="color:#171916">Wybierając nasze drzwi macie Państwo pewność bezpieczeństwa na długie lata i gwarancję wysokiej jakości wykonania. Do produkcji naszych drzwi używamy tylko sprawdzonych technologii oraz najlepszych materiałów...</p></div>
+    </div>
+     
+          <h2 class="title">Slide 1</h2>
+          <img class="text" src="file:///D:/Documents%20and%20Settings/Kordian/Pulpit/wik%C4%99d/slajd2.png">
+          <a href="" class="read-more">Czytaj więcej</a>
+          
+     </article><!-- e:slide -->
+
+     <article class="slide active">
+          <h2 class="title">Slide 2</h2>
+          <div class="text">
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          </div>
+          <a href="" class="read-more">Czytaj więcej</a>
+
+     </article><!-- e:slide -->
+     
+      <article class="slide active">
+          <h2 class="title">Slide 3</h2>
+          <div class="text">
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          </div>
+          <a href="" class="read-more">Czytaj więcej</a>
+         
+     </article><!-- e:slide -->
+
+     <ul class="pagination">
+          <li class=""><a href="">1</a></li>
+          <li class="active"><a href="">2</a></li>
+           <li class="active"><a href="">3</a></li>
+     </ul>
+    
+
+	</section><!-- e:slider -->   
+
+  </body>
+</html>

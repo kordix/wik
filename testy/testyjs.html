@@ -1,0 +1,43 @@
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; utf-8">
+  <meta name="generator" content="PSPad editor, www.pspad.com">
+  <link href="dyndanie.css" rel="stylesheet">
+  <title></title>
+ 
+  </head>
+  <body>
+
+<table id="tabelka"></table>
+
+  
+<script>
+var table = document.getElementById('tabelka'); //pobieramy tabelkê
+
+var tableHTML = ''; //rozpoczynamy generowanie kodu tabeli
+for (var y=1; y<=12; y++) {
+
+    var tr = '<tr>'; //zaczynam tworzyæ nowe tr
+
+    for (var x=1; x<=12; x++) {
+        var tekst = x*y; //tworzymy tekst do wstawienia do komórki
+
+        if (y==1 || x==1) { //je¿eli jest to pierwsza komórka w pionie lub poziomie
+            var td = '<th>'+tekst+'</th>'; //stwórz nowe th
+        } else {
+            var td = '<td>'+tekst+'</td>'; //stwórz nowe td
+        }
+
+        tr += td; //wstaw komórkê do rzêdu TR
+    }
+    tr += '</tr>'; //zakoñcz tworzenie rzêdu
+
+    tableHTML += tr; //wstaw rz¹d do generowanego kodu HTML
+}
+
+table.innerHTML = tableHTML; //gotowy wygenerowany kod HTML wstawiamy do tabeli na stronie
+</script>  
+
+
+  </body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "logger": {
+    "title": "Remote Sync"
+  },
+  "uploadOnSave": false,
+  "useAtomicWrites": false,
+  "deleteLocal": false,
+  "hostname": "s24.hekko.pl",
+  "target": "/domains/kordix.jupe24.pl/public_html/wiked",
+  "ignore": [
+    ".remote-sync.json",
+    ".git/**"
+  ],
+  "username": "kordix",
+  "password": "YekQv1x732",
+  "watch": [],
+  "transport": "ftp",
+  "port": "21"
+}
