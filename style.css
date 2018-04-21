@@ -326,6 +326,18 @@ margin-top:0;
 float:left;
 }
 
+.textslider
+{
+
+width:375px;
+
+vertical-align: top;
+font-size:20px;
+border-style: solid; border-color: #fff; border-width: 0px;
+margin-top:0;
+float:left;
+}
+
 
 #textslider2
 {

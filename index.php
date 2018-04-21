@@ -12,7 +12,7 @@
 <script>
 $(function() {
 
-     var pauseTime = 1000;
+     var pauseTime = 4000;
 
      $('#slider .pagination li').click(function (e) {
           e.preventDefault();
@@ -108,18 +108,20 @@ line-height:1px;
       <div id="sliderobrazdiv">
       <img class="obrazek" style="width:480;margin:5px 5px 5px 20px;" src="images/ppoz.png">
       </div>
-      <div id="textslider"><br><br><h3 class="title" style="color:red;left:-50px;margin-bottom:10px">Drzwi p.poż.</h3><p id="textslider2" class="text" style="color:#171916;left:-50px;width:450px" >Wybierając nasze drzwi macie Państwo pewność bezpieczeństwa na długie lata i gwarancję wysokiej jakości wykonania. Do produkcji naszych drzwi używamy tylko sprawdzonych technologii oraz najlepszych materiałów...</p></div>
-     <a class="big-more">Zobacz więcej</a>
+      <div id="textslider"><br><br><h3 class="title" style="color:red;left:-50px;margin-bottom:10px">Drzwi p.poż.</h3><p id="textslider2" class="text" style="color:#171916;left:-50px;width:450px" >Wybierając nasze drzwi macie Państwo pewność bezpieczeństwa na długie lata i gwarancję wysokiej jakości wykonania. Do produkcji naszych drzwi używamy tylko sprawdzonych technologii oraz najlepszych materiałów...</p>
 
+     </div>
+     <a class="big-more">Zobacz więcej</a>
      </article><!-- e:slide -->
 
- <img class="next" src="images/next.png" style="z-index:1000; position:absolute;right:35px;bottom:70px">
-     <!--
-	 <ul class="pagination">
+     <img class="next" src="images/next.png" style="z-index:1000; position:absolute;right:35px;bottom:70px">
+
+
+	 <!-- <ul class="pagination"  style="visibility:hidden">
           <li class=""><a href="">1</a></li>
           <li class="active"><a href="">2</a></li>
-     </ul>
-	 -->
+     </ul> -->
+
 
 </section><!-- e:slider -->
 </div>
